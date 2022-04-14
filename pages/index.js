@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import Head from 'next/head';
 import MainMobile from '/components/main/mobile';
 import MainDesktop from '/components/main/desktop';
 import { isMobile } from 'mobile-device-detect';
@@ -23,6 +24,12 @@ const App = () => {
 
   return (
     <React.Fragment>
+      <Head>
+        <title>Syamsul&Alya</title>
+        <meta name="description" content="Anda Di Jemput! Raikan Cinta Majlis Perkahwinan Syamsul Dan Alya." />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="shortcut icon" href="/raikan-cinta.jpeg" />
+      </Head>
       {renderContent()}
     </React.Fragment>
   )
