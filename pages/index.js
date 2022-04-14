@@ -25,7 +25,7 @@ const App = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Syamsul&Alya</title>
+        <title>Syamsul & Alya</title>
         <meta name="description" content="Anda Di Jemput! Raikan Cinta Majlis Perkahwinan Syamsul Dan Alya." />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="shortcut icon" href="/raikan-cinta.jpeg" />

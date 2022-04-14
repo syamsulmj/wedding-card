@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inconsolata:wght@500&family=Lavishly+Yours&family=Playfair+Display:ital@1&display=swap');
 
 .main {
-  background: url("/images/wedding-card-background.png") no-repeat center center fixed;
+  background-image: url("/images/wedding-card-background.png");
+  background-size: cover;
+  background-position:center ;
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  height: 105vh;
+  height: 100vh;
   overflow: hidden;
 
   .content {
