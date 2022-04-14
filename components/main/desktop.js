@@ -3,38 +3,33 @@ import Style from '/styles/main/MainDesktop.module.scss';
 import Loader from '/components/common/Loader';
 
 const MainDesktop = () => {
-  const [renderState, setRenderState] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => {
-      setRenderState(true);
-    }, 3000)
-  }, [])
-
-  const renderContent = () => {
-    return (
-      <div className={Style.main}>
-        <div className={Style.content}>
-          <img className={Style.coupleImage} src="/images/cartoon-malay-wedding.png" />
+  return (
+    <div className={Style.main}>
+      <div className={Style.content}>
+        HEY! I'M REALLY SORRY, BUT THIS SITES
+        <br/>
+        THIS HASN'T SUPPORT DESKTOP VIEW YET
+        <br/>
+        PLEASE REFRESH IN MOBILE VIEW. THANK YOU!
+        <div>
+          <div className={Style.ldsHourglass}></div>
+          <div className={Style.ldsGrid}>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className={Style.ldsCircle}><div></div></div>
         </div>
       </div>
-    )
-  }
-
-  const renderDecision = () => {
-    if (renderState) {
-      return renderContent();
-    }
-    else {
-      return (
-        <div className={Style.loadingPage}>
-          <Loader />
-        </div>
-      )
-    }
-  }
-
-  return renderDecision();
+    </div>
+  );
 }
 
 export default MainDesktop;
