@@ -151,3 +151,12 @@
   text-align: center;
   animation: backgroundChange 3s;
 }
+
+@keyframes backgroundChange {
+  0% {
+    background: #ff3057;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
