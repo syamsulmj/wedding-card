@@ -27,7 +27,7 @@ const SyamsulWedding = () => {
       <Head>
         <title>Syamsul & Alya</title>
         <meta name="description" content="Anda Di Jemput! Raikan Cinta Majlis Perkahwinan Syamsul Dan Alya." />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="shortcut icon" href="/raikan-cinta.jpeg" />
       </Head>
       {renderContent()}
