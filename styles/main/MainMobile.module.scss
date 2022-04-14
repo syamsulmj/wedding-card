@@ -6,7 +6,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 110vh;
+  height: 105vh;
+  overflow: hidden;
 
   .content {
     top: 50;
@@ -68,7 +69,7 @@
 }
 
 .secondMain {
-  height: 100vh;
+  height: 110vh;
   background-color: #fcf8f5;
   text-align: center;
   padding-top: 2em;
