@@ -2,7 +2,7 @@
 
 .main {
   background-image: url("/images/wedding-card-background.png");
-  background-size: cover;
+  background-size: 100% 100vh;
   background-position:center ;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -48,6 +48,11 @@
       }
       .middle {
         font-size: 3rem;
+
+        .isAndroid {
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
       }
       .bride {
         font-size: 4rem;
@@ -145,13 +150,4 @@
   padding-top: 40vh;
   text-align: center;
   animation: backgroundChange 3s;
-}
-
-@keyframes backgroundChange {
-  0% {
-    background: #ff3057;
-  }
-  100% {
-    background: #ffffff;
-  }
 }

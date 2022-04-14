@@ -1,0 +1,43 @@
+.main {
+  background: #f6b4bf;
+  height: 100vh;
+
+  .content {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 15em;
+    display: flex;
+    flex-direction: column;
+
+    .selectionText {
+      font-size: 1.3rem;
+      margin-bottom: 3em;
+    }
+
+    .btnSelection {
+      div {
+        width: 100%;
+        a {
+          background-color: #d5b6d5;
+          font-family: 'Inconsolata', monospace;
+          font-size: 1.2rem;
+          padding: .5em 4em;
+          color: #ffffff;
+          text-decoration: none;
+          border-radius: 10px;
+
+          &:hover {
+            background-color: #8f598f;
+          }
+        }
+
+        &:nth-child(2) {
+          margin-top: 2.5em;
+          a {
+            padding: .5em 3.1em;
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,13 +6,16 @@ import {
   faWaze,
   faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
+import { isAndroid } from 'mobile-device-detect';
 
 
 const MainMobile = () => {
   const [renderState, setRenderState] = useState(false);
+  const [android, setAndroid] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
+      setAndroid(isAndroid);
       setRenderState(true);
     }, 3000)
   }, [])
@@ -27,13 +30,13 @@ const MainMobile = () => {
             <img className={Style.coupleImage} src="/images/cartoon-malay-wedding.png" />
             <div className={Style.names}>
               <div className={Style.groom}>Syamsul</div>
-              <div className={Style.middle}>&</div>
+              <div className={Style.middle}><div className={`${android ? Style.isAndroid : ''}`}>&</div></div>
               <div className={Style.bride}>Alya</div>
             </div>
             <div className={Style.infos}>
-              <div className={Style.dateDiv}>SABTU | 3 JUNE | 2022</div>
-              <hr style={{width: '45%', borderColor: '#db3060'}} />
-              <div className={Style.timeDiv}>12:00 TENGAH HARI</div>
+              <div className={Style.dateDiv}>SABTU | 11 JUNE | 2022</div>
+              <hr style={{width: '50%', borderColor: '#db3060'}} />
+              <div className={Style.timeDiv}>12:00 TGH HARI - 4:00 PTG</div>
             </div>
           </div>
         </div>
