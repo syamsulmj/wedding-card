@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inconsolata:wght@500&family=Lavishly+Yours&family=Playfair+Display:ital@1&display=swap');
+
+.main {
+  background: url("/images/wedding-card-background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+
+  .content {
+    top: 50;
+    align-content: center;
+    text-align: center;
+
+    .botTitle {
+      font-size: .8rem;
+      margin-top: -1em;
+      font-family: 'Playfair Display', serif;
+      color: #e67a98;
+    }
+
+    .title {
+      font-size: 3rem;
+      color: #a13855;
+      padding-top: 3.5em;
+      font-weight: bold;
+      font-family: 'Alex Brush', cursive;
+    }
+
+    .coupleImage {
+      width: 9em;
+      height: 9em;
+    }
+
+    .names {
+      font-family: 'Lavishly Yours', cursive;
+      color: #de406c;
+      .groom {
+        font-size: 4rem;
+        text-align: left;
+        margin-top: -0.5em;
+        margin-bottom: -0.5em;
+        padding-left: .8em;
+      }
+      .middle {
+        font-size: 3rem;
+      }
+      .bride {
+        font-size: 4rem;
+        text-align: right;
+        margin-top: -0.5em;
+        padding-right: 1em;
+      }
+    }
+
+    .infos {
+      padding-top: 1em;
+      color: #9c3051;
+      .dateDiv {
+        font-family: 'Inconsolata', monospace;
+      }
+      .timeDiv {
+        font-family: 'Inconsolata', monospace;
+      }
+    }
+  }
+}
+
+.secondMain {
+  height: 100vh;
+  background-color: #fcf8f5;
+  text-align: center;
+  padding-top: 2em;
+
+  .normalText {
+    font-size: .8rem;
+    color: #c98a65;
+    padding: 1em;
+  }
+
+  .parentsName {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    color: #5e3118;
+  }
+
+  .groomBrideNames {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.5rem;
+    color: #5e3118;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .mapDiv {
+    padding-top: 2em;
+    .btnLink {
+      &:nth-child(2) {
+        margin-top: 25px;
+
+        a {
+          padding: .5em 3em;
+        }
+      }
+
+      a {
+        padding: .5em 4.5em;
+        color: #ffffff;
+        background: #2e2e2e;
+        border-radius: 10px;
+        font-size: 1rem;
+
+        &:hover {
+          background: #913400;
+        }
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .mapImg {
+      padding-top: 2em;
+      img {
+        width: 20em;
+        height: 10em;
+      }
+    }
+  }
+}
+
+.loadingPage {
+  background: #ffffff;
+  width: 100%;
+  height: 100vh;
+  padding-top: 40vh;
+  text-align: center;
+  animation: backgroundChange 3s;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background: #ff3057;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
