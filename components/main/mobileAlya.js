@@ -6,16 +6,28 @@ import {
   faWaze,
   faGooglePlus,
 } from "@fortawesome/free-brands-svg-icons";
-import { isAndroid } from 'mobile-device-detect';
+import { isAndroid, isIOS } from 'mobile-device-detect';
 
 
 const MainMobile = () => {
   const [renderState, setRenderState] = useState(false);
   const [android, setAndroid] = useState(false);
+  const [ios, setIos] = useState(false);
+
+  const iosBg = {
+    backgroundPositionX: '50%',
+    backgroundPositionY: '0%',
+    webkitBackgroundSize: '100% 50%'
+  }
+
+  const iosContentTitle = {
+    paddingTop: '3em',
+  }
 
   useEffect(() => {
     setTimeout(() => {
       setAndroid(isAndroid);
+      setIos(isIOS);
       setRenderState(true);
     }, 3000)
   }, [])
@@ -23,9 +35,9 @@ const MainMobile = () => {
   const renderContent = () => {
     return (
       <React.Fragment>
-        <div className={Style.main}>
+        <div className={Style.main} style={ios ? iosBg : {}}>
           <div className={Style.content}>
-            <div className={Style.title}>Walimatul Urus</div>
+            <div className={Style.title} style={ios ? iosContentTitle : {}}>Walimatul Urus</div>
             <div className={Style.botTitle}>UNDANGAN MAJLIS PERKAHWINAN </div>
             <img className={Style.coupleImage} src="/images/cartoon-malay-wedding.png" />
             <div className={Style.names}>
