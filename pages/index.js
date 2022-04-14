@@ -13,7 +13,7 @@ const App = () => {
       </Head>
       <div className={Style.main}>
         <div className={Style.content}>
-          <div className={Style.selectionText}>Which wedding are you attending?</div>
+          <div className={Style.selectionText}>Who's wedding event are you attending?</div>
           <div className={Style.btnSelection}>
             <div><a href="/alya-wedding">Alya's Wedding</a></div>
             <div><a href="/syamsul-wedding">Syamsul's Wedding</a></div>
