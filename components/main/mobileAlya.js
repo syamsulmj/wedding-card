@@ -12,12 +12,12 @@ import { isAndroid, isIOS } from 'mobile-device-detect';
 const MainMobile = () => {
   const [renderState, setRenderState] = useState(false);
   const [android, setAndroid] = useState(false);
-  const [ios, setIos] = useState(false);
+  const [ios, setIos, deviceType] = useState(false);
 
   const iosBg = {
     backgroundPositionX: '50%',
     backgroundPositionY: '0%',
-    webkitBackgroundSize: '100% 50%'
+    WebkitBackgroundSize: '100% 50%'
   }
 
   const iosContentTitle = {
